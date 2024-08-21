@@ -1,0 +1,10 @@
+[package]
+name = "game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+game_context = { path = "../game_context" }
+
+[target.'cfg(target_os = "linux")'.lib]
+crate-type = ["cdylib"]

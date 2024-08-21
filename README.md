@@ -29,6 +29,16 @@ cargo: command not found
 ```
 
 And python3 `requests` is also not available in the Python environment
+since it was not in the included packed in the [flake.nix](./cmu_binary_bomb/flake.nix)
+
+```
+python = pkgs.python311.withPackages (p: with p; [ 
+  angr
+  ipython 
+  ipdb
+  python-lsp-server
+]);
+```
 
 ```
 ❯ python3 -c 'import requests'

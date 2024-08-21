@@ -12,7 +12,7 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
 ## Python devshell
 
-Here is a Python devshell with [r2](https://rada.re/n/radare2.html)
+Here is a Python devshell with [angr](https://github.com/angr/angr) and [r2](https://rada.re/n/radare2.html) installed
 
 ```
 ❯ cd cmu_binary_bomb

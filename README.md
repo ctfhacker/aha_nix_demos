@@ -29,7 +29,7 @@ cargo: command not found
 ```
 
 And python3 `requests` is also not available in the Python environment
-since it was not in the included packed in the [flake.nix](./cmu_binary_bomb/flake.nix)
+since it was not in the included packed in the [flake.nix](./cmu_binary_bomb/flake.nix#L12)
 
 ```
 python = pkgs.python311.withPackages (p: with p; [ 

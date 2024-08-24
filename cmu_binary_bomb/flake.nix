@@ -27,6 +27,7 @@
       packages.${system}.docker = pkgs.dockerTools.buildLayeredImage {
         name = "cmu_binary_bomb";
         tag = "latest";
+        created = "now";
         config = {
           Cmd = [ "${python}/bin/python" "${./flag2.py}" "${./bomb}"];
         };

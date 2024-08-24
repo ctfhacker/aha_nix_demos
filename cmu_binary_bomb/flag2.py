@@ -4,9 +4,10 @@
 import angr
 import logging
 import claripy
+import sys
 
 def main():
-    proj = angr.Project('bomb', auto_load_libs=False)
+    proj = angr.Project(sys.argv[1], auto_load_libs=False)
 
     logging.basicConfig()
     logging.getLogger('angr.surveyors.explorer').setLevel(logging.DEBUG)
